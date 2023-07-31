@@ -1,0 +1,11 @@
+declare let numberArray: number[];
+declare let stringArray: Array<string>;
+declare let unionTypeArray: (number | string)[];
+declare let boolArray: boolean[];
+declare let mixTypeArray: (string | number | boolean)[];
+declare let array5: number[];
+declare function numAcceptor(nums: number[]): void;
+declare let array6: number[];
+declare let array7: (string | number)[];
+declare let emptyArray3: never[];
+declare let emptyArray4: number[];
