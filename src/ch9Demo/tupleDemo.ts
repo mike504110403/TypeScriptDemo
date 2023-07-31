@@ -21,7 +21,7 @@ console.log(tuple1.length);
 //console.log(tuple1[1]);
 //console.log(tuple1[2]); // 取不到
 //#endregion
- 
+
 //#region tuple處理
 // tuple1.forEach((h: string | number) => {
 //     if (typeof h === "string") {

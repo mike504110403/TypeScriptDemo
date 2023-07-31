@@ -8,14 +8,31 @@
 //#endregion
 
 //#region 自訂列舉值
-enum Product2 { Hat, SunGlass, Gloves = 333, Umbrella, Pants = 1 };
+enum Product2 {
+  Hat,
+  SunGlass,
+  Gloves = 333,
+  Umbrella,
+  Pants = 1,
+}
 
-enum OtherEnum { First = 10, Second = 20 };
-enum Product3 { Hat = OtherEnum.First + 1, Gloves = 20, Umbrella = Hat + Gloves };
+enum OtherEnum {
+  First = 10,
+  Second = 20,
+}
+enum Product3 {
+  Hat = OtherEnum.First + 1,
+  Gloves = 20,
+  Umbrella = Hat + Gloves,
+}
 //#endregion
 
 //#region 字串列舉
-enum City { London = "London", Paris = "Paris", NY = "NewYork" }
+enum City {
+  London = "London",
+  Paris = "Paris",
+  NY = "NewYork",
+}
 // console.log(City.London);
 // console.log("Paris");
 //#endregion
@@ -32,22 +49,29 @@ let b = City["Paris"];
 //#region 型別防衛敘述
 let productValue: Product3 = Product3.Hat;
 if (typeof productValue === "number") {
-    //console.log("Value is a number");
+  //console.log("Value is a number");
 }
 
 let unionValue: number | Product3 = Product3.Hat;
 if (typeof unionValue === "number") {
-    //console.log("Value is a number");
+  //console.log("Value is a number");
 }
 //#endregion
 
 //#region 列舉常數
-enum enum9 { aaa, bbb, ccc };
+enum enum9 {
+  aaa,
+  bbb,
+  ccc,
+}
 let enum9Value: enum9 = enum9.aaa;
 //console.log(enum9Value);
 
-
-const enum enum10 { aaa = 0, bbb, ccc };
+const enum enum10 {
+  aaa = 0,
+  bbb,
+  ccc,
+}
 let enum10Value: enum10 = enum10.aaa;
 //console.log(enum10Value);
 

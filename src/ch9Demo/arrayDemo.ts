@@ -3,13 +3,13 @@
 //#region  陣列型別指定
 let numberArray: number[] = [100, 75, 42];
 //checkElementInArray(numberArray);
-let stringArray: Array<string> = ["aaa", "bbb", "ccc"]
+let stringArray: Array<string> = ["aaa", "bbb", "ccc"];
 //checkElementInArray(stringArray);
 stringArray.push("111");
 //checkElementInArray(stringArray);
 
 //stringArray.push(111); // -> 型別不符，報錯
-let unionTypeArray: (number | string)[] = [111, "222", 333]
+let unionTypeArray: (number | string)[] = [111, "222", 333];
 //checkElementInArray(unionTypeArray);
 //#endregion
 
@@ -25,7 +25,7 @@ let array5: number[];
 //array5.push("123"); // -> 型別不符，報錯
 
 // 接數字陣列函式
-function numAcceptor(nums: number[]) { }
+function numAcceptor(nums: number[]) {}
 let array6 = [111, 222, 333]; // number[]
 //checkElementInArray(array6);
 numAcceptor(array6); // -> 型別符合

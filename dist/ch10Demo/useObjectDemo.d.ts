@@ -1,36 +1,24 @@
-declare type ObjShape1 = {
-    id: number;
-    name: string;
-    price?: number;
-};
-declare type ObjShape2 = {
-    id: number;
+declare type Person = {
+    id: string;
     name: string;
     city: string;
+    contact: {
+        phone: number;
+    };
+    getContact(field: string): string;
 };
-declare let obj8: {
-    id: number;
-    name: string;
-    price: number;
+declare type Employee = {
+    id: string;
+    company: string;
+    dept: string;
+    contact: {
+        name: string;
+    };
+    getContact(field: number): number;
 };
-declare let obj9: {
-    id: number;
-    name: string;
-    price: number;
-};
-declare let obj10: {
-    id: number;
-    name: string;
-    price: number;
-};
-declare let obj11: {
-    id: number;
-    name: string;
-    city: string;
-};
-declare let dataItems1: (ObjShape1 | ObjShape2)[];
-declare type UnionType = {
-    id: number | string;
-    name: string;
-};
-declare function isPerson(testObj: any): testObj is ObjShape2;
+declare type EmployeePerson = Person & Employee;
+declare let typefunTest: ((field: string) => string) & ((field: number) => number);
+declare let person1: EmployeePerson;
+declare let person2: EmployeePerson;
+declare let stringtypeTest: string;
+declare let numbertypeTest: number;
